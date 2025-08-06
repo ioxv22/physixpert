@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional E-commerce Design System for PhysixsPert */
+
+@layer base {
+  :root {
+    /* Background System */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+    --surface: 0 0% 98%;
+    --surface-hover: 0 0% 95%;
+    
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --card-border: 220 13% 91%;
+    --card-shadow: 220 13% 69%;
+    
+    /* Brand Colors - Education Theme */
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 100% 40%;
+    --primary-light: 210 100% 95%;
+    
+    --secondary: 147 100% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 147 100% 40%;
+    --secondary-light: 147 100% 95%;
+    
+    /* Course Accent Colors */
+    --grade-9: 250 100% 60%;
+    --grade-10: 280 100% 60%;
+    --grade-11: 320 100% 60%;
+    
+    /* Text Hierarchy */
+    --text-primary: 220 20% 10%;
+    --text-secondary: 220 13% 46%;
+    --text-muted: 220 9% 64%;
+    
+    /* Interactive Elements */
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 13% 46%;
+    --accent: 210 100% 95%;
+    --accent-foreground: 210 100% 45%;
+    
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Border System */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 210 100% 45%;
+    
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 45%), hsl(147 100% 45%));
+    --gradient-hero: linear-gradient(180deg, hsl(210 100% 98%), hsl(0 0% 100%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 13% 98%));
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(220 13% 69% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(220 13% 69% / 0.1), 0 2px 4px -1px hsl(220 13% 69% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(220 13% 69% / 0.1), 0 4px 6px -2px hsl(220 13% 69% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(220 13% 69% / 0.1), 0 10px 10px -5px hsl(220 13% 69% / 0.04);
+    
+    /* Animations */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Border Radius System */
+    --radius-sm: 0.375rem;
+    --radius: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 220 13% 95%;
+    --surface: 220 20% 10%;
+    --surface-hover: 220 20% 12%;
+    
+    --card: 220 20% 10%;
+    --card-foreground: 220 13% 95%;
+    --card-border: 220 20% 20%;
+    --card-shadow: 220 20% 5%;
+    
+    --primary: 210 100% 55%;
+    --primary-foreground: 220 20% 8%;
+    --primary-hover: 210 100% 50%;
+    --primary-light: 210 100% 15%;
+    
+    --secondary: 147 100% 55%;
+    --secondary-foreground: 220 20% 8%;
+    --secondary-hover: 147 100% 50%;
+    --secondary-light: 147 100% 15%;
+    
+    --text-primary: 220 13% 95%;
+    --text-secondary: 220 13% 70%;
+    --text-muted: 220 9% 55%;
+    
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 13% 70%;
+    --accent: 210 100% 15%;
+    --accent-foreground: 210 100% 55%;
+    
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 210 100% 55%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 55%), hsl(147 100% 55%));
+    --gradient-hero: linear-gradient(180deg, hsl(210 100% 15%), hsl(220 20% 8%));
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 10%), hsl(220 20% 12%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    direction: rtl;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-custom {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .transition-custom {
+    transition: var(--transition-normal);
+  }
+  
+  .course-card {
+    @apply bg-card border border-card-border rounded-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1;
+  }
+  
+  .cta-button {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-primary-hover hover:scale-105 active:scale-95;
+  }
+  
+  .feature-item {
+    @apply flex items-center space-x-3 rtl:space-x-reverse text-text-primary;
+  }
+}
