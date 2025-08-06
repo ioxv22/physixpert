@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { GraduationCap, Award, Clock, Users } from 'lucide-react';
-import teacherProfile from '@/assets/teacher-profile.jpg';
+import teacherProfile from '@/assets/teacher-profile-new.jpg';
 
 export const TeacherProfile = () => {
   const achievements = [
