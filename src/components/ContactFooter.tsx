@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Video } from 'lucide-react';
-import physixspertLogo from '@/assets/physixspert-logo.png';
+import physixspertLogo from '@/assets/physixspert-logo-new.png';
 
 export const ContactFooter = () => {
   const socialLinks = [
