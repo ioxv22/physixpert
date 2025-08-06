@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Video } from 'lucide-react';
-import physixspertLogo from '@/assets/physixspert-logo-new.png';
+import physixspertLogo from '@/assets/physixspert-logo.png';
 
 export const ContactFooter = () => {
   const socialLinks = [
@@ -126,10 +126,13 @@ export const ContactFooter = () => {
               </div>
             </div>
 
-            {/* Copyright */}
-            <div className="text-text-secondary text-sm text-center">
-              <p>© 2025 PhysixsPert + <a href="https://t.me/iivoz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">https://t.me/iivoz</a>. جميع الحقوق محفوظة.</p>
-              <p className="mt-1">تم تصميم الموقع باشراف استاذ اسلام الشناوي</p>
+            {/* Credits Logo */}
+            <div className="flex items-center justify-center">
+              <img 
+                src="/src/assets/credits-logo.jpg" 
+                alt="Credits" 
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
             </div>
           </div>
         </div>
