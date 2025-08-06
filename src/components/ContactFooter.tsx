@@ -33,9 +33,30 @@ export const ContactFooter = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
               تواصل معنا
             </h2>
-            <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
               هل لديك أسئلة؟ تواصل معنا عبر قنواتنا الرسمية ونحن سعداء للإجابة عن استفساراتك
             </p>
+            
+            {/* Payment Contacts */}
+            <div className="bg-primary-light/10 border border-primary/20 rounded-xl p-6 max-w-md mx-auto">
+              <h3 className="text-xl font-bold text-text-primary mb-4">لإرسال الإيصال والتواصل</h3>
+              <div className="space-y-3">
+                <div className="flex items-center justify-center gap-2 text-text-primary">
+                  <MessageCircle size={20} className="text-primary" />
+                  <span className="font-medium">الأدمن:</span>
+                  <a href="https://t.me/abdurhman009" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover transition-colors font-bold">
+                    @abdurhman009
+                  </a>
+                </div>
+                <div className="flex items-center justify-center gap-2 text-text-primary">
+                  <MessageCircle size={20} className="text-primary" />
+                  <span className="font-medium">الأستاذ:</span>
+                  <a href="https://t.me/PhysixsPert" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover transition-colors font-bold">
+                    @PhysixsPert
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Social Links */}
