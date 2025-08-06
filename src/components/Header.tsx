@@ -7,8 +7,11 @@ export const Header = () => {
 
   const navItems = [
     { name: 'الرئيسية', href: '#home' },
+
     { name: 'الدورات', href: '#courses' },
+
     { name: 'عن الأستاذ', href: '#teacher' },
+
     { name: 'اتصل بنا', href: '#contact' }
   ];
 
