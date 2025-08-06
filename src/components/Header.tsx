@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import physixspertLogo from '@/assets/physixspert-logo.png';
+import physixspertLogo from '@/assets/physixspert-logo-new.png';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
